@@ -93,3 +93,16 @@ python eval.py \
 
 ## Other issues:
 Regarding ToG-FinQA, we must note that this dataset was constructed using data provided by a third-party data provider. Since we have not yet granted permission to share the data, we are currently unable to provide access to ToG-FinQA outside our research team.
+
+## Citation
+```
+@misc{ma2024thinkongraph20deepfaithful,
+      title={Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation}, 
+      author={Shengjie Ma and Chengjin Xu and Xuhui Jiang and Muzhi Li and Huaren Qu and Cehao Yang and Jiaxin Mao and Jian Guo},
+      year={2024},
+      eprint={2407.10805},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.10805}, 
+}
+```
