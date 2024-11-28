@@ -1,5 +1,6 @@
 # Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation (ToG-2)
-
+## Paper
+https://arxiv.org/abs/2407.10805
 
 ## Project Structure
 - `requirements.txt`: Pip environment file.
