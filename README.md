@@ -96,6 +96,7 @@ python eval.py \
 Regarding ToG-FinQA, we must note that this dataset was constructed using data provided by a third-party data provider. Since we have not yet granted permission to share the data, we are currently unable to provide access to ToG-FinQA outside our research team.
 
 ## Citation
+If you are interested or inspired by this work, you can cite us by:
 ```
 @misc{ma2024thinkongraph20deepfaithful,
       title={Think-on-Graph 2.0: Deep and Faithful Large Language Model Reasoning with Knowledge-guided Retrieval Augmented Generation}, 
@@ -107,3 +108,6 @@ Regarding ToG-FinQA, we must note that this dataset was constructed using data p
       url={https://arxiv.org/abs/2407.10805}, 
 }
 ```
+
+## Claim
+This project uses the Apache 2.0 protocol. The project assumes no legal responsibility for any of the model's output and will not be held liable for any damages that may result from the use of the resources and output.
