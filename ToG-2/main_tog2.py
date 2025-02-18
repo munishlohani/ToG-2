@@ -287,9 +287,6 @@ def main_wiki_new(original_question, topic_entity, ground_truth, data_point):
 
                 return answer, search_entity_list, Total_Related_Senteces, cluster_chain_of_entities, end_mode, remark
             else:
-                if args.clue_query:
-                    clue = answer
-                    question = question_clearify(original_question,args, answer)
                 print("\n-----------------------depth %d still not find the answer." % depth)
                 flag_finish, entities_id = if_finish_list(entities_id)
 
