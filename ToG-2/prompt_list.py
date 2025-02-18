@@ -8,8 +8,6 @@ A: 1. {language.human_language.main_country (Score: 0.4))}: This relation is hig
 
 Q: """
 
-prompt_requery_clue = """Given a question and some knowledge gained so far, please predict the additional evidence that needs to be found to answer the current question, and then provide a suitable query for retrieving
-this potential evidence. Note that the query must be included in curly brackets {xxx}."""
 
 score_entity_candidates_prompt = """Please score the entities' contribution to the question on a scale from 0 to 1 (the sum of the scores of all entities is 1).
 Q: The movie featured Miley Cyrus and was produced by Tobin Armbrust?
