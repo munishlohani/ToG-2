@@ -51,11 +51,11 @@ def clean_relations_bm25_sent(topn_relations, topn_scores, entity_id, head_relat
     return True, relations
 
 
-def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo", n=1):
-
+def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="llama", n=1):
+    print(engine)
     if "llama" in engine.lower():
         openai_api_key = "EMPTY"
-        openai_api_base = "http://localhost:7788/v1"
+        openai_api_base = "http://localhost:8001/v1"
 
         client = OpenAI(
             api_key=openai_api_key,
@@ -99,11 +99,11 @@ def run_llm(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-tu
             f -= 1
     return ''
 
-def run_llm_cnfin(prompt, temperature, max_tokens, opeani_api_keys, engine="gpt-3.5-turbo", n=1):
+def run_llm_cnfin(prompt, temperature, max_tokens, opeani_api_keys, engine="llama", n=1):
 
     if "llama" in engine.lower():
         openai_api_key = "EMPTY"
-        openai_api_base = "http://localhost:7788/v1"
+        openai_api_base = "http://localhost:8001/v1"
 
         client = OpenAI(
             api_key=openai_api_key,

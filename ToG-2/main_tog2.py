@@ -29,9 +29,9 @@ parser.add_argument("--depth", type=int,
 parser.add_argument("--remove_unnecessary_rel", type=bool,
                     default=True, help="whether removing unnecessary relations.")
 parser.add_argument("--LLM_type", type=str,
-                    default='gpt-3.5-turbo', choices=['gpt-3.5-turbo', 'llama','gpt-4o'], help="base LLM model.")
+                    default='llama', choices=['gpt-3.5-turbo', 'llama','gpt-4o'], help="base LLM model.")
 parser.add_argument("--LLM_type_rp", type=str,
-                    default="gpt-3.5-turbo", choices=["gpt-3.5-turbo-16k",'gpt-4o'],help="base LLM model.")
+                    default="llama", choices=["gpt-3.5-turbo-16k",'gpt-4o',"llama"],help="base LLM model.")
 parser.add_argument("--opeani_api_keys", type=str,
                     default='<your_api_key>',
                     help="if the LLM_type is gpt-3.5-turbo or gpt-4, you need add your own openai api keys.")
