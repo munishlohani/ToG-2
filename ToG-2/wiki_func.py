@@ -291,7 +291,7 @@ def relation_search(entity_id, entity_name, pre_relations, pre_head, question, a
 def run_llm_json(prompt, temperature, max_tokens, openai_api_keys, args, engine="gpt-3.5-turbo"):
     if "llama" in engine.lower():
         openai_api_key = "EMPTY"
-        openai_api_base = "http://localhost:7788/v1"
+        openai_api_base = "http://localhost:8001/v1"
 
         client = OpenAI(
             api_key=openai_api_key,

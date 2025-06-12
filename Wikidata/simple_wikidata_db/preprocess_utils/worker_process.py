@@ -60,28 +60,31 @@ IGNORE = {
 
 def process_mainsnak(data, language_id):
     datatype = data["datatype"]
-    if datatype == "string":
-        return data["datavalue"]["value"]
-    elif datatype == "monolingualtext":
-        if data["datavalue"]["value"]["language"] == language_id:
-            return data["datavalue"]["value"]["text"]
-    elif datatype == "quantity":
-        return data["datavalue"]["value"]["amount"]
-    elif datatype == "time":
-        return data["datavalue"]["value"]["time"]
-    elif datatype == "wikibase-item":
-        return data["datavalue"]["value"]["id"]
-    elif datatype == "external-id":
-        return data["datavalue"]["value"]
-    elif datatype == "url":
-        return data["datavalue"]["value"]
+    try:
+        if datatype == "string":
+            return data["datavalue"]["value"]
+        elif datatype == "monolingualtext":
+            if data["datavalue"]["value"]["language"] == language_id:
+                return data["datavalue"]["value"]["text"]
+        elif datatype == "quantity":
+            return data["datavalue"]["value"]["amount"]
+        elif datatype == "time":
+            return data["datavalue"]["value"]["time"]
+        elif datatype == "wikibase-item":
+            return data["datavalue"]["value"]["id"]
+        elif datatype == "external-id":
+            return data["datavalue"]["value"]
+        elif datatype == "url":
+            return data["datavalue"]["value"]
 
-    # Ignore all other triples
-    elif datatype in IGNORE:
+        # Ignore all other triples
+        elif datatype in IGNORE:
+            return None
+        else:
+            return None
         return None
-    else:
+    except:
         return None
-    return None
 
 
 def process_json(obj, language_id="en"):

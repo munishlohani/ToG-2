@@ -49,7 +49,7 @@ python main_tog2.py \
 ```
 cd ToG-2
 python main_tog2.py \
---dataset hotpot_e
+--dataset hotpot_e \
 --max_length 256 \  
 --temperature_exploration 0 \ 
 --temperature_reasoning 0 \  

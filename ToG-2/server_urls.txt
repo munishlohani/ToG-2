@@ -1,2 +1,1 @@
-http://xx.xx.xx.xx:xx   # Include your own Wikidata server urls here.
-
+http://10.200.14.82/:23546
